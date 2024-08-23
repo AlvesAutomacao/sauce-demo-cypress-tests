@@ -77,4 +77,23 @@ describe('Gerenciamento de Carrinho', () => {
         // Então o número de produtos no carrinho deve ser 1
         entaoONumeroDeProdutosNoCarrinhoDeveSer(1);
     });
+
+    it('deve manter os produtos no carrinho após recarregar a página', () => {
+        // Quando o usuário adicionar dois produtos ao carrinho
+        quandoOUsuarioAdicionarProdutoAoCarrinho(0); // Adiciona o primeiro produto
+        quandoOUsuarioAdicionarProdutoAoCarrinho(1); // Adiciona o segundo produto
+
+        // Então o número de itens no carrinho deve ser 2
+        entaoONumeroDeItensNoCarrinhoDeveSer('2');
+
+        // E quando o usuário navegar para o carrinho
+        quandoONavegarParaOCarrinho();
+
+        // E quando o usuário recarregar a página
+        cy.reload();
+
+        // Então o número de produtos no carrinho deve ser 2
+        entaoONumeroDeProdutosNoCarrinhoDeveSer(2);
+    });
 });
+
