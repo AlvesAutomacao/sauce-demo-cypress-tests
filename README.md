@@ -26,9 +26,13 @@ Estrutura do Projeto
 cypress/e2e/: Contém os arquivos de teste.
 
 login.spec.js: Testes relacionados ao login.
+
 productsNavigation.spec.js: Testes para navegação entre produtos.
+
 cart.spec.js: Testes para gerenciamento do carrinho.
+
 checkout.spec.js: Testes para o processo de checkout.
+
 cypress/support/pagesObjects/: Contém as classes para representar páginas.
 
 loginPage.js: Página de login.
@@ -36,7 +40,8 @@ productsPage.js: Página de produtos.
 cartPage.js: Página do carrinho.
 checkoutPage.js: Página de checkout.
 Executando os Testes
-Abrir o Cypress:
+
+# Abrir o Cypress:
 
 Para iniciar a interface gráfica do Cypress e executar os testes, use:
 
@@ -52,13 +57,19 @@ npx cypress run
 
 npx cypress run --spec cypress/e2e/login.spec.js
 
-Descrição dos Testes
+# Descrição dos Testes
+
 Login
+
 login.spec.js: Testa a funcionalidade de login, incluindo login com credenciais válidas e inválidas, e verificação dos campos de login após logout.
+
 Navegação entre Produtos
-productsNavigation.spec.js: Testa a navegação entre a lista de produtos e a página de detalhes do produto, e a capacidade de retornar à lista de produtos.
+productsNavigation.spec.js: Testa a navegação entre a lista de produtos e a página de detalhes do produto, e a capacidade de retornar à 
+lista de produtos.
+
 Gerenciamento de Carrinho
 cart.spec.js: Testa a adição e remoção de produtos do carrinho e a verificação do número de itens no carrinho.
+
 Checkout
 checkout.spec.js: Testa o processo de checkout, incluindo o preenchimento do formulário de checkout e a confirmação do pedido.
 
