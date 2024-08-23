@@ -22,6 +22,9 @@ npm install
 
 Certifique-se de que o Cypress está instalado e configurado. O Cypress será instalado automaticamente com as dependências do projeto.
 
+Se precisar de mais informações sobre a instalação do Cypress, consulte a documentação oficial do Cypress https://docs.cypress.io/guides/overview/why-cypress
+
+
 Estrutura do Projeto
 cypress/e2e/: Contém os arquivos de teste.
 
